@@ -38,8 +38,7 @@ public class Main {
         Integer pos = position(list, idsalary);
         if (pos == null) {
             System.out.println("This id does not exist!");
-        }
-        else {
+        } else {
             System.out.println("Enter the percentage: ");
             double percent = scanner.nextDouble();
             list.get(pos).increseSalary(percent);
