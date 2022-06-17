@@ -1,7 +1,4 @@
-package Inheritance.Entities;
-
-//extends é usado para receber como herança da outra classe.
-// não é necessário repetir os argumentos de herança.
+package OverlappingEnvelope.Entities;
 
 public class BusinessAccount extends Account {
 
@@ -26,6 +23,6 @@ public class BusinessAccount extends Account {
 
     public void loan(double amount) {
         if (amount <= loanLimit)
-            balance += amount - 10.0;
+            deposit(amount);
     }
 }
