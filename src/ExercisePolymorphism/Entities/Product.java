@@ -6,7 +6,7 @@ public class Product {
 
     private Double price;
 
-    public Product () {
+    public Product() {
 
     }
 
@@ -31,4 +31,9 @@ public class Product {
         this.price = price;
     }
 
+    public String priceTag() {
+        return name
+                + " $ "
+                + String.format("%.2f", price);
+    }
 }
